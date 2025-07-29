@@ -1,0 +1,15 @@
+.scene-section {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.fade-section {
+  opacity: 0;
+  transition: opacity 0.8s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.fade-section.is-visible {
+  opacity: 1;
+}
