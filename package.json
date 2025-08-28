@@ -1,9 +1,0 @@
-{
-  "dependencies": {
-    "@jspsych/plugin-webgazer-calibrate": "^2.1.0",
-    "daisyui": "^5.0.46",
-    "jspsych": "^8.2.2",
-    "react-router-dom": "^7.6.3",
-    "tailwindcss": "^4.1.11"
-  }
-}

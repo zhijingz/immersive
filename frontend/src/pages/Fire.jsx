@@ -53,7 +53,7 @@ export default function Fire() {
     sceneRef.current = scene;
     
     const camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 0.1, 100)
-    camera.position.set(-2.5, 2, 4)
+    camera.position.set(0, 2, 4)
     //camera.lookAt(3, 2, 0);
     
      const renderer = new THREE.WebGLRenderer({ antialias: true });
@@ -78,7 +78,7 @@ export default function Fire() {
     })
     const rock = new THREE.Mesh(rockGeometry, rockMaterial)
     rock.scale.set(0.3, 0.3, 0.3)
-    rock.position.set(0.2, 0.4, 0)
+    rock.position.set(0, 0.4, 0)
     rock.position.z -= 0.3;
     scene.add(rock)
 

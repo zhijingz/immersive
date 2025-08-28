@@ -39,8 +39,8 @@ function Star() {
 
     // Camera
     const camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 0.1, 100);
-    camera.position.set(0, 2, 4);
-    camera.lookAt(0, 0.3, 0);
+    camera.position.set(0, 0, 5);
+    camera.lookAt(0, 0, 0);
 
     // Orbit Controls
     /*const controls = new OrbitControls(camera, renderer.domElement);
