@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
+import galaxy from '/src/assets/galaxy.jpg';
 
 function Star() {
   const threeContainerRef = useRef(null);
@@ -17,7 +18,7 @@ function Star() {
 
     // Galaxy background
     const loader = new THREE.TextureLoader();
-    loader.load('/src/assets/galaxy.jpg', (texture) => {
+    loader.load(galaxy, (texture) => {
       texture.encoding = THREE.sRGBEncoding;
       texture.colorSpace = THREE.SRGBColorSpace;
       // Create a darkened version of the texture using a canvas

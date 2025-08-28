@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
+import mountain from '/src/assets/black.jpg';
 
 export default function Home() {
   const threeContainerRef = useRef(null);
@@ -31,7 +32,7 @@ export default function Home() {
     const fieldSizeZ = 40;
  
     const loader = new THREE.TextureLoader();
-    loader.load('/src/assets/black.jpg', (texture) => {
+    loader.load(mountain, (texture) => {
       const bgWidth = fieldSizeX * 3;
       const bgHeight = fieldSizeX * (window.innerHeight / window.innerWidth) * 3;
       const bgGeometry = new THREE.PlaneGeometry(bgWidth, bgHeight);
